@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Application</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+
+
+<!--Start Page-->
+
+<div id="username-page"  >
+    <div class="username-page-container">
+        <h1 class="title">Enter your username</h1>
+        <form id="usernameForm" name="usernameForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button id="login" type="submit" class="accent username-submit">Connect to Chat</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Chat Page-->
+<div id="container" style="display:none">
+    <aside>
+       <header>-->
+                 <button id="close" class="changeststaus" type="submit">Close Chat</button>
+<!--            <input type="text" placeholder="search">&ndash;&gt;-->
+
+        </header>-->
+        <ul id="users">
+
+
+
+        </ul>
+    </aside>
+    <main>
+        <header>
+            <img src="avatar.jpg" alt="">
+            <div>
+                <h2 id="welcome">Welcome</h2>
+                <input class="changeststaus" id="changestatus" type="button" value = "Go Do not Disturb"/>
+            </div>
+
+        </header>
+        <ul id="chat">
+
+        </ul>
+        <footer>
+            <textarea id="txtChat" placeholder="Type your message"></textarea>
+
+            <button id="send" class="changeststaus" type="submit">Send</button>
+
+        </footer>
+    </main>
+</div>
+</body>
+</html>
